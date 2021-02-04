@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test thread-count="5" name="Railway_TranDuyTien(failed)">
+    <classes>
+      <class name="railway.BookTicketTest">
+        <methods>
+          <include name="beforeclass"/>
+          <include name="TC05"/>
+        </methods>
+      </class> <!-- railway.BookTicketTest -->
+    </classes>
+  </test> <!-- Railway_TranDuyTien(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="railway.railways.TC05_LoginWithWrongPasswordMoreTime">
+        <methods>
+          <include name="TC05" invocation-numbers="0"/>
+          <include name="beforeclass"/>
+          <include name="afterclass"/>
+        </methods>
+      </class> <!-- railway.railways.TC05_LoginWithWrongPasswordMoreTime -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="5" name="Firefox Test(failed)">
+    <parameter name="browser" value="fireFox"/>
+    <classes>
+      <class name="railway.railways.TC05_LoginWithWrongPasswordMoreTime">
+        <methods>
+          <include name="TC05" invocation-numbers="0"/>
+          <include name="beforeclass"/>
+          <include name="afterclass"/>
+        </methods>
+      </class> <!-- railway.railways.TC05_LoginWithWrongPasswordMoreTime -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

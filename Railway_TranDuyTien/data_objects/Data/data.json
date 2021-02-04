@@ -1,0 +1,82 @@
+{
+  "TC01_Login": [{
+    "username": "demo@gmail.com",
+    "password": "tranduytien"
+  }],
+  "TC02_LoginWithBlankUsername": [{
+    "username": "",
+    "password": "tranduytien",
+    "expectedMsg": "There was a problem with your login and/or errors exist in your form."
+  }],
+  "TC03_LoginWithPasswordInvalid": [{
+    "username": "demo@gmail.com",
+    "password": "",
+    "expectedMsg": "There was a problem with your login and/or errors exist in your form."
+  }],
+  "TC04_ContactTest": [{
+    "expectedTextLink": "mailto:thanh.viet.le@logigear.com"
+  }],
+  "TC05_LoginWithWrongPasswordMoreTime": [{
+    "username": "demo@gmail.com",
+    "password": "",
+    "expectedMsg": "You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes."
+  }],
+  "TC06_LoginAndVerifyTabName": [{
+    "username": "demo@gmail.com",
+    "password": "tranduytien"
+  }],
+  "TC07_Register": [{
+    "expectedMsg": "Registration Confirmed! You can now log in to the site.",
+    "password": "tranduytien",
+    "confirmPassword": "tranduytien"
+  }],
+  "TC08_LoginWithAccountNotActive": [{
+    "username": "demo@gmail.com",
+    "password": "tranduytien"
+  }],
+  "TC10_UserCannotResetPassword": [{
+    "expectedMsg": "This email address doesn't exist."
+  }],
+  "TC11_CannotCreateWithPasswordAndPidEmpty": [{
+    "expectedMsgError": "There're errors in the form. Please correct the errors and try again.",
+    "expectedMsgPassword": "Invalid password length",
+    "expectedMsgPid": "Invalid ID length",
+    "email": "demo@gmail.com"
+  }],
+  "TC14_CannotBookTicketMoreThan10": [{
+    "email": "sele@gmail.com",
+    "password": "tranduytien",
+    "confirmPassword": "tranduytien",
+    "pid": "12345678",
+    "departDate": "2/11/2021",
+    "departFrom": "Sài Gòn",
+    "arriveAt": "Nha Trang",
+    "seatType": "Soft seat",
+    "ticketAmount10": "10",
+    "ticketAmount1": "1",
+    "expectedMsgBook10Ticket": "There're errors in the form. Please correct the errors and try again.",
+    "expectedMsgBookMore10Ticket": "You have booked 10 tickets. You can book no more."
+  }],
+  "TC15_BookTicket": [{
+    "username": "demo@gmail.com",
+    "password": "tranduytien",
+    "departFrom": "Sài Gòn",
+    "arriveAt": "Nha Trang",
+    "nameSeatType": "Soft bed with air conditioner",
+    "selectDepartFrom": "DepartStation",
+    "selectArriveAt": "ArriveStation",
+    "selectSeatType": "SeatType"
+  }],
+  "TC16_CancelTicket": [{
+    "email": "sele16@gmail.com",
+    "password": "tranduytien",
+    "confirmPassword": "tranduytien",
+    "pid": "12345678",
+    "expectedMsg": "Ticket booked successfully!",
+    "departDate": "2/11/2021",
+    "departFrom": "Sài Gòn",
+    "arriveAt": "Nha Trang",
+    "seatType": "Soft seat",
+    "ticketAmount1": "1"
+  }]
+}
